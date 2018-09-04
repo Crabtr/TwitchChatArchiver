@@ -15,10 +15,10 @@ func main() {
 	}
 
 	// Verify ./logs/ exists
-	if _, err := os.Stat("./logs/"); os.IsNotExist(err) {
+	if _, err := os.Stat("logs/"); os.IsNotExist(err) {
 		os.Mkdir("logs/", 0775)
 
-		log.Printf("Created directory: ./logs/\n")
+		log.Printf("Created directory: logs/\n")
 	}
 
 	// Verify ./logs/channel exists for every channel

@@ -109,7 +109,7 @@ func connect(wg sync.WaitGroup, nick string, oauth string, channel string) {
 
 				timestampDayStr := strconv.Itoa(timestampDay)
 
-				outputPath := filepath.Join("./logs/", middleSplit[2][1:], timestampDayStr+".txt")
+				outputPath := filepath.Join("logs/", middleSplit[2][1:], timestampDayStr+".txt")
 
 				// Open and write the line to file
 				logFile, err := os.OpenFile(outputPath, os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0644)
@@ -141,7 +141,7 @@ func connect(wg sync.WaitGroup, nick string, oauth string, channel string) {
 
 				timestampDayStr := strconv.Itoa(timestampDay)
 
-				outputPath := filepath.Join("./logs/", middleSplit[2][1:], timestampDayStr+"_usernotice.txt")
+				outputPath := filepath.Join("logs/", middleSplit[2][1:], timestampDayStr+"_usernotice.txt")
 
 				// Open and write the line to file
 				logFile, err := os.OpenFile(outputPath, os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0644)
