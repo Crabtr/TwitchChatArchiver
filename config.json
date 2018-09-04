@@ -1,0 +1,9 @@
+{
+    "nick": "nick",
+    "oauth": "oauth:token",
+    "channels": [
+        "#faceittv",
+        "#starladder5",
+        "#99damage"
+    ]
+}
