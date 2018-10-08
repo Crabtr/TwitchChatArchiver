@@ -6,13 +6,13 @@ This is the very simple "chat bot" I use for archiving messages during events.
 ## Important remarks
 * Every channel gets its own connection. In a normal situation this would be
     completely pointless, but Twitch will drop a connection if too many
-    messages are in the sending queued to be sent to it and the high volume
-    nature of rooms during events means that limit is easily hit.
+    messages are queued to be sent to it and the high volume nature of rooms
+    during events means that limit is easily hit.
 * The exact maximum number of connections allowed per IP address isn't
     officially documented, but as an anti-spam measure Twitch will drop all of
     your connections and possibly further temporarily ban your IP should you
-    open too many. If you want to archive a lot of channels (≥ 50) then
-    this project probably isn't for you, but you presumably know that.
+    open too many. If you want to archive a lot of channels (≥ 50) then this
+    project probably isn't for you, but you presumably know that.
 
 ## Configuration
 
